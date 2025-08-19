@@ -128,7 +128,9 @@ type UpdateWebhookOptions struct {
 }
 
 type UpdateWebhookResponse struct {
-	ID      string `json:"id"`
+	// Уникальный ID карты.
+	ID string `json:"id"`
+	// Обновленный webhook карты.
 	Webhook string `json:"webhook"`
 }
 

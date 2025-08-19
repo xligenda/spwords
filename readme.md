@@ -48,7 +48,7 @@ import (
 func main() {
 	api := spworlds.NewClient("card id", "card token")
 
-	// Перевод 10 АР на карту с номером OSTER с комментарием "Подарок"
+	// Перевод 10 АР на карту с номером OSTER, с комментарием "Подарок"
 	resp, err := api.CreateTransaction(spworlds.CreateTransactionOptions{
 		Receiver: "OSTER",
 		Amount:   10,
